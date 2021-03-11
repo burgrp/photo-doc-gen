@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+body * {
+    display: flex;
+    flex-direction: column; 
+}
+
+.page {
+  padding-top: 1cm;
+}
+
+
+.image {
+    align-items: center;
+    margin-bottom: 2cm;
+}
+
+.photo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 80%;
+    height: 10cm;
+}
+
+.title {
+  margin-top: 1em;
+}
+
+
+@media print {
+  .page { 
+    page-break-after: always;
+  }
+}
+
+@media screen {
+    .page {
+        border-bottom: 3px solid red;
+    }
+}
